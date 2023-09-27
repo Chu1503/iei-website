@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
+import About from "../components/About";
 
 // export default function Home() {
 const Home: NextPage = () => {
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 2000);
+      }, 1000);
     };
     fakeDataFetch();
   }, []);
@@ -25,17 +26,17 @@ const Home: NextPage = () => {
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-x-hidden">
       {/* <Navbar /> */}
 
-      <section id="hero" className="snap-center">
-        {" "}
-        {/* WARNING: SNAP CENTER */}
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
 
+      <section id="hero" className="snap-center">
+        <About />
+      </section>
+
+
+
       <Footer />
-
-      {/* Hero */}
-
-      {/* About */}
 
       {/* Gallery */}
 
