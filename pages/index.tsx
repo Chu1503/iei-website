@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 import About from "../components/About";
+import Events from "../components/Events";
 
 // export default function Home() {
 const Home: NextPage = () => {
@@ -30,17 +31,19 @@ const Home: NextPage = () => {
         <Hero />
       </section>
 
-      <section id="hero" className="snap-center">
+      <section id="about" className="snap-center">
         <About />
       </section>
 
+      <section id="events" className="snap-center">
+        <Events />
+      </section>
 
 
       <Footer />
 
       {/* Gallery */}
 
-      {/* Events */}
 
       {/* Team */}
 
