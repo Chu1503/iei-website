@@ -26,7 +26,7 @@ const Home: NextPage = () => {
   return isLoading ? (
     <Loader />
   ) : (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-x-hidden">
+    <div className="bg-[rgb(11,8,33)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-x-hidden">
       <Navbar />
 
       <section id="hero" className="snap-start">

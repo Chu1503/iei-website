@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Navbar({}: Props) {
   return (
-    <header className="sticky top-0 flex items-end justify-between max-w-screen mx-auto z-20 xl:items-center bg-[rgba(0,0,0,0.15)]">
+    <header className="sticky top-0 flex items-end justify-between max-w-screen mx-auto z-20 xl:items-center bg-[rgb(0,0,0)]">
       <div className="flex flex-row items-center p-5">
         <img
           className="relative h-12 w-30 mx-auto object-cover"
