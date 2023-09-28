@@ -18,7 +18,7 @@ export default function Hero({}: Props) {
         src="https://cdn.discordapp.com/attachments/894801439992475768/1156323370191831080/IEI_LOGO_BLACK.png?ex=65148d8e&is=65133c0e&hm=331707fcce56648d7103819906e429d1bcfd863982d43f046017a8dcd932e641&"
         alt=""
       />
-      <div>
+      <div className="z-20">
         <h1 className="text-5xl lg:text-6xl font-semibold px-18">
           <span>{text}</span>
           <Cursor cursorColor="red" />{" "}
