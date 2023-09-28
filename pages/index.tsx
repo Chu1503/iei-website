@@ -7,6 +7,8 @@ import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 import About from "../components/About";
 import Events from "../components/Events";
+import Team from "../components/Team";
+import Gallery from "../components/Gallery";
 
 // export default function Home() {
 const Home: NextPage = () => {
@@ -39,15 +41,14 @@ const Home: NextPage = () => {
         <Events />
       </section>
 
+      <section id="team" className="snap-center">
+        <Team />
+      </section>
 
-      <Footer />
+      <section id="gallery" className="snap-center">
+        <Gallery />
+      </section>
 
-      {/* Gallery */}
-
-
-      {/* Team */}
-
-      {/* Contact Us or Footer */}
     </div>
   );
 };
