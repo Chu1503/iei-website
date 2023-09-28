@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Navbar({}: Props) {
   return (
-    <header className="sticky top-0 flex items-end justify-between max-w-screen mx-auto z-20 xl:items-center bg-[rgb(0,0,0)]">
+    <header className="sticky top-0 flex items-end justify-between max-w-screen mx-auto z-30 xl:items-center bg-[rgb(0,0,0)]">
       <div className="flex flex-row items-center p-5">
         <img
           className="relative h-12 w-30 mx-auto object-cover"
@@ -15,25 +15,25 @@ export default function Navbar({}: Props) {
         />
       </div>
 
-      <div className="flex flex-row items-center text-gray-300 cursor-pointer p-5">
+      <div className="flex flex-row items-center text-gray-300 p-5">
         <Link href="#hero">
-          <button className="herobutton">Home</button>
+          <button className="herobutton cursor-pointer">Home</button>
         </Link>
 
         <Link href="#about">
-          <button className="herobutton">About Us</button>
+          <button className="herobutton cursor-pointer">About Us</button>
         </Link>
 
         <Link href="#events">
-          <button className="herobutton">Events</button>
+          <button className="herobutton cursor-pointer">Events</button>
         </Link>
 
         <Link href="#team">
-          <button className="herobutton">Team</button>
+          <button className="herobutton cursor-pointer">Team</button>
         </Link>
 
         <Link href="#gallery">
-          <button className="herobutton">Gallery</button>
+          <button className="herobutton cursor-pointer">Gallery</button>
         </Link>
 
       </div>

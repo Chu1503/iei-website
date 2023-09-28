@@ -11,7 +11,7 @@ export default function Hero({}: Props) {
     delaySpeed: 1000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-12 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"

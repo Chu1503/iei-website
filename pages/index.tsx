@@ -29,26 +29,31 @@ const Home: NextPage = () => {
     <div className="bg-[rgb(11,8,33)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-x-hidden">
       <Navbar />
 
-      <section id="hero" className="snap-start">
+      {/* EXPERIMENT WITH SNAP LATER  */}
+
+      <section id="hero">
         <Hero />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about">
         <About />
       </section>
 
-      <section id="events" className="snap-center">
+      <section id="events">
         <Events />
       </section>
 
-      <section id="team" className="snap-center">
+      <section id="team">
         <Team />
       </section>
 
-      <section id="gallery" className="snap-center">
+      <section id="gallery">
         <Gallery />
       </section>
 
+      <section id="gallery">
+        <Footer />
+      </section>
     </div>
   );
 };
