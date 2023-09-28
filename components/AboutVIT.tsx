@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-export default function About({}: Props) {
+export default function AboutVIT({}: Props) {
   return (
     <motion.div
       initial={{
@@ -18,12 +18,12 @@ export default function About({}: Props) {
       className="flex flex-col relative h-auto text-center max-w-7xl p-10 justify-evenly mx-auto items-center"
     >
       <h2 className="p-10 uppercase tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
-        About Us
+        About VIT
       </h2>
 
       <motion.div
         initial={{
-          x: -200,
+          x: 200,
           opacity: 0,
         }}
         transition={{
@@ -37,13 +37,14 @@ export default function About({}: Props) {
         className="space-y-10 px-0 md:px-10"
       >
         <p className="text-lg text-center">
-          The Institution of Engineers (India) is a prestigious non-profit
-          organization established in 1920. Our mission is to advance
-          engineering, technology, and their practical applications. As the
-          world's largest professional association of engineers, we employ
-          innovative strategies to promote sustainable development. At VIT, our
-          IE(I) student chapter serves as a platform for comprehensive technical
-          and non-technical growth, organizing diverse events and activities.
+          Vellore Institute of Technology (VIT), located in Vellore, is a
+          prestigious engineering institution known for its exceptional
+          education and holistic student development. It's a rare college that
+          not only offers world-class academics but also encourages
+          co-curricular activities, nurturing personal and ethical growth in
+          students. Dr. G. Viswanathan, our dedicated Chancellor, founded VIT
+          with a vision of fostering intellectual excellence and producing
+          innovative professionals who can benefit society.
         </p>
       </motion.div>
     </motion.div>
