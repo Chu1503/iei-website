@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -45,9 +44,9 @@ const Home: NextPage = () => {
         <AboutVIT />
       </section>
 
-      <section id="events">
+      {/* <section id="events">
         <Events />
-      </section>
+      </section> */}
 
       <section id="team">
         <Team />
@@ -57,7 +56,7 @@ const Home: NextPage = () => {
         <Gallery />
       </section>
 
-      <section id="gallery">
+      <section id="footer">
         <Footer />
       </section>
     </div>

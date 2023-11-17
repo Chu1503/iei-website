@@ -31,7 +31,7 @@ export default function Gallery({}: Props) {
         src="https://cdn.discordapp.com/attachments/894801439992475768/1157061991047905281/1.png?ex=65173d73&is=6515ebf3&hm=027c33e6b3fa31c806e71f80cac269210661f2140f375954da7337198b6a4daa&"
       />
       <Carousel.Caption>
-        {/* <h3>First slide label</h3>
+        <h3>First slide label</h3>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </Carousel.Caption>
     </Carousel.Item>
