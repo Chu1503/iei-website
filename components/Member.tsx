@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { SocialIcon } from "react-social-icons";
 
 type MemberProps = {
@@ -40,50 +40,42 @@ const getSocialLink = (name: string): string => {
 
 const Member: React.FC<MemberProps> = ({ name, position, imageUrl }) => {
   const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <div
-      className="member-container rounded-3xl overflow-hidden shadow-md shadow-white bg-white/30 backdrop-blur-lg border border-gray-200
-        hover:opacity-100 hover:bg-white hover:cursor-pointer relative"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <img
-        src={imageUrl}
-        alt={name}
-        className={`w-full h-40 object-contain transition-opacity ${
-          isHovered ? "opacity-0" : "opacity-100"
-        }`}
-      />
-      <div
-        className={`member-info bg-black text-white p-2 min-h-full justify-center transition-opacity ${
-          isHovered ? "bg-white" : ""
-        }`}
-      >
-        <strong
-          className={`name text-xl sm:text-2xl md:text-2xl text-[#F7AB0A] ${
-            isHovered ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          {name}
-        </strong>
-        <div
-          className={`position text-md sm:text-xl md:text-xl ${
-            isHovered ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          {position}
+    <div className="rounded-3xl hover:cursor-pointer">
+      <div className="member-container rounded-3xl overflow-hidden bg-gray-500/40 backdrop-blur-lg border border-white/30 relative">
+        <img
+          loading="lazy"
+          src={imageUrl}
+          alt={name}
+          className="w-full h-[16rem] object-contain opacity-100"
+        />
+        <div className="social-icon-container absolute top-2 right-2">
+          <SocialIcon
+            url={getSocialLink(name)}
+            target="_blank"
+            fgColor={isHovered ? "transparent" : "white"}
+            bgColor={isHovered ? "#0a67c3" : "transparent"}
+            style={{ width: "3rem", height: "3rem" }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          />
         </div>
-        {isHovered && (
-          <div className="social-icon-container absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <SocialIcon
-              url={getSocialLink(name)}
-              target="_blank"
-              fgColor="white"
-              bgColor="blue"
-            />
+        {/* <div className="member-info bg-gray-700 text-white p-2 min-h-full justify-center">
+          <strong className="name text-xl sm:text-2xl md:text-2xl text-[#F7AB0A]">
+            {name}
+          </strong>
+          <div className="position text-md sm:text-xl md:text-xl">
+            {position}
           </div>
-        )}
+          <div className="social-icon-container absolute top-10 right-0 transform -translate-x-1/2 -translate-y-1/2">
+            <SocialIcon
+            url={getSocialLink(name)}
+            target="_blank"
+            fgColor="white"
+            bgColor="blue"
+          />
+          </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import vit_logo from '../images/vit_logo.png';
 
 type Props = {};
 
@@ -10,8 +11,8 @@ export default function Footer({}: Props) {
         <a href="https://vit.ac.in/" target="_blank">
         <img
           className="relative h-12 w-30 mx-auto object-contain cursor-pointer"
-          src="https://cdn.discordapp.com/attachments/894801439992475768/1156965388630904843/vitlogohd.png?ex=6516e37c&is=651591fc&hm=69b691d0ceffa3541a96995266ee38ac02c4f0af9a0155e1f80f4785c6a8e504&"
-          alt=""
+          src={vit_logo.src}
+          alt="VIT LOGO"
         />
         </a>
       </div>

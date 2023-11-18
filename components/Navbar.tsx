@@ -1,6 +1,6 @@
 import React from "react";
-import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
+import iei_logo_text from '../images/iei_logo_text.png';
 
 type Props = {};
 
@@ -10,8 +10,8 @@ export default function Navbar({}: Props) {
       <div className="flex flex-row items-center p-5">
         <img
           className="relative h-12 w-30 mx-auto object-contain"
-          src="https://cdn.discordapp.com/attachments/894801439992475768/1156824465385197639/IEI_NEW_LOGO.png?ex=6516603d&is=65150ebd&hm=ba7a17410df4b09c71b3820de0c7aa7b273271aeb903eeb6207828fd11e300ba&"
-          alt=""
+          src={iei_logo_text.src}
+          alt="IEI LOGO TEXT"
         />
       </div>
 
