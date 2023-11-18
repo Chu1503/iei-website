@@ -21,7 +21,7 @@ export default function Team({}: Props) {
     {
       name: "Dr. Joel J",
       position: "Faculty Coordinator",
-      imageUrl: vedika.src,
+      imageUrl: joel.src,
     },
     {
       name: "Vedika Nigam",
@@ -31,7 +31,7 @@ export default function Team({}: Props) {
     {
       name: "Dr. Mahalakshmi P",
       position: "Faculty Coordinator",
-      imageUrl: vedika.src,
+      imageUrl: mahalakshmi.src,
     },
     {
       name: "Suryansh",
@@ -49,14 +49,14 @@ export default function Team({}: Props) {
       imageUrl: omm.src,
     },
     {
-      name: "Daksh Pratap Singh",
-      position: "Finance Head",
-      imageUrl: daksh.src,
-    },
-    {
       name: "Shiv Akash",
       position: "Design Head",
       imageUrl: shiv.src,
+    },
+    {
+      name: "Daksh Pratap Singh",
+      position: "Finance Head",
+      imageUrl: daksh.src,
     },
     {
       name: "Manish Maheshwari",
@@ -81,19 +81,19 @@ export default function Team({}: Props) {
   ];
 
   return (
-    <div className="flex flex-col relative h-auto text-center max-w-7xl p-10 justify-evenly mx-auto items-center xl:px-10 min-h-auto xl:space-y-10">
+    <div className="flex flex-col relative h-auto text-center max-w-7xl p-10 justify-evenly items-center mx-auto">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         // className="flex flex-col relative h-auto text-center max-w-7xl p-10 justify-evenly mx-auto items-center xl:px-10 min-h-auto xl:space-y-10"
       >
-        <h2 className="pt-20 p-10 uppercase tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
+        <h2 className="pt-20 p-12 uppercase tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
           Our Team
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-10 gap-y-10 sm:gap-y-12 sm:gap-x-20">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-10 sm:gap-y-12 sm:gap-x-20">
         {teamMembers.map((member, index) => (
           <Member
             key={index}

@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-// import Carousel from "react-bootstrap/Carousel";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import pic1 from "../images/1.png";
+import pic2 from "../images/2.png";
+import pic3 from "../images/3.png";
+import pic4 from "../images/4.png";
+import pic5 from "../images/5.png";
+import pic6 from "../images/6.png";
 
 type Props = {};
 
@@ -20,13 +24,22 @@ export default function Gallery({}: Props) {
 
   const slides = [
     {
-      url: "https://cdn.discordapp.com/attachments/894801439992475768/1157061991047905281/1.png?ex=65173d73&is=6515ebf3&hm=027c33e6b3fa31c806e71f80cac269210661f2140f375954da7337198b6a4daa&",
+      url: pic1.src,
     },
     {
-      url: "https://cdn.discordapp.com/attachments/894801439992475768/1157061991576391730/2.png?ex=65173d73&is=6515ebf3&hm=f48410d55ae8e84f451b938b41fe1060e9a1b167bc496a71e6b305666caf1e8a&",
+      url: pic2.src,
     },
     {
-      url: "https://cdn.discordapp.com/attachments/894801439992475768/1157061992117436568/3.png?ex=65173d74&is=6515ebf4&hm=e5bb0c8488d06d6402d1b02e4ff54c616b7eab96e20a6934732a7fa118d44f8b&",
+      url: pic3.src,
+    },
+    {
+      url: pic4.src,
+    },
+    {
+      url: pic5.src,
+    },
+    {
+      url: pic6.src,
     },
   ];
 
@@ -86,45 +99,11 @@ export default function Gallery({}: Props) {
               onClick={() => goToSlide(slideIndex)}
               className="text-2xl cursor-pointer"
             >
-              <RxDotFilled
-                style={{color: "#F7AB0A" }}
-              />
+              <RxDotFilled style={{ color: "#F7AB0A" }} />
             </div>
           ))}
         </div>
       </div>
     </div>
   );
-}
-{
-  /* <Carousel>
-    <Carousel.Item>
-      <img
-        className="relative w-screen mx-auto object-cover sm:h-[500px] sm:w-auto"
-        src="https://cdn.discordapp.com/attachments/894801439992475768/1157061991047905281/1.png?ex=65173d73&is=6515ebf3&hm=027c33e6b3fa31c806e71f80cac269210661f2140f375954da7337198b6a4daa&"
-      />
-      <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-
-    <Carousel.Item>
-      <img
-        className="relative w-screen mx-auto object-cover sm:h-[500px] sm:w-auto"
-        src="https://cdn.discordapp.com/attachments/894801439992475768/1157061991576391730/2.png?ex=65173d73&is=6515ebf3&hm=f48410d55ae8e84f451b938b41fe1060e9a1b167bc496a71e6b305666caf1e8a&"
-      />
-      <Carousel.Caption>
-      </Carousel.Caption>
-    </Carousel.Item>
-
-    <Carousel.Item>
-      <img
-        className="relative w-screen mx-auto object-cover sm:h-[500px] sm:w-auto"
-        src="https://cdn.discordapp.com/attachments/894801439992475768/1157061992117436568/3.png?ex=65173d74&is=6515ebf4&hm=e5bb0c8488d06d6402d1b02e4ff54c616b7eab96e20a6934732a7fa118d44f8b&"
-      />
-      <Carousel.Caption>
-      </Carousel.Caption>
-    </Carousel.Item>
-  </Carousel> */
 }

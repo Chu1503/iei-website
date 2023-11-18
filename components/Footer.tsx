@@ -6,8 +6,8 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className="sticky bottom-0 p-5 flex flex-col items-center justify-between max-w-7xl mx-auto z-20 xl:items-center sm:flex-row">
-      <div className="flex items-center text-gray-300">
+    <footer className="sticky bottom-0 p-5 flex flex-col items-center justify-between max-w-screen mx-auto z-20 w-full bg-[rgb(0,0,0)] sm:flex-row">
+      <div className="flex items-center text-gray-300 px-32">
         <a href="https://vit.ac.in/" target="_blank">
         <img
           className="relative h-12 w-30 mx-auto object-contain cursor-pointer"
@@ -16,7 +16,7 @@ export default function Footer({}: Props) {
         />
         </a>
       </div>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center px-32">
         <SocialIcon
           url="https://www.linkedin.com/company/ie-i-vellore/mycompany/"
           target="_blank"

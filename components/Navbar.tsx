@@ -7,7 +7,7 @@ type Props = {};
 export default function Navbar({}: Props) {
   return (
     <header className="sticky top-0 hidden items-end justify-between max-w-screen mx-auto z-30 xl:items-center bg-[rgb(0,0,0)] sm:flex">
-      <div className="flex flex-row items-center p-5">
+      <div className="flex flex-row items-center p-5 px-10">
         <img
           className="relative h-12 w-30 mx-auto object-contain"
           src={iei_logo_text.src}
@@ -15,7 +15,7 @@ export default function Navbar({}: Props) {
         />
       </div>
 
-      <div className="flex flex-row items-center text-gray-300 p-5">
+      <div className="flex flex-row items-center text-gray-300 p-5 ">
         <Link href="#hero">
           <button className="herobutton cursor-pointer">Home</button>
         </Link>

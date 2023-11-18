@@ -47,7 +47,7 @@ const Member: React.FC<MemberProps> = ({ name, position, imageUrl }) => {
           loading="lazy"
           src={imageUrl}
           alt={name}
-          className="w-full h-[8rem] object-contain opacity-100 sm:h-[15rem]"
+          className="w-full h-[9.5rem] object-contain opacity-100 sm:h-[15rem]"
         />
         <div className="hidden sm:block social-icon-container absolute top-2 right-2">
           <SocialIcon

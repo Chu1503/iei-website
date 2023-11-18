@@ -17,7 +17,7 @@ export default function Events({}: Props) {
       }}
       className="flex flex-col relative h-auto text-center max-w-7xl p-10 justify-evenly mx-auto items-center"
     >
-      <h2 className="p-10 uppercase tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
+      <h2 className="pt-20 p-10 uppercase tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
         Events
       </h2>
     </motion.div>
