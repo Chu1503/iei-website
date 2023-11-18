@@ -9,10 +9,6 @@ type MemberProps = {
 
 const getSocialLink = (name: string): string => {
   switch (name) {
-    case "Teacher 1":
-      return "https://www.linkedin.com";
-    case "Teacher 2":
-      return "https://www.linkedin.com";
     case "Vedika Nigam":
       return "https://www.linkedin.com/in/vedika-nigam-809669211/";
     case "Suryansh":
