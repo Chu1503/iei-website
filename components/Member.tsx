@@ -22,7 +22,7 @@ const getSocialLink = (name: string): string => {
     case "Omm Malhotra":
       return "https://www.linkedin.com/in/omm-malhotra-889925250/";
     case "Daksh Pratap Singh":
-      return "https://www.linkedin.com/in";
+      return "https://www.linkedin.com";
     case "Shiv Akash":
       return "https://www.linkedin.com/in/shiv-akash/";
     case "Manish Maheshwari":
@@ -41,13 +41,13 @@ const getSocialLink = (name: string): string => {
 const Member: React.FC<MemberProps> = ({ name, position, imageUrl }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="rounded-3xl hover:cursor-pointer">
-      <div className="member-container rounded-3xl overflow-hidden bg-gray-500/40 backdrop-blur-lg border border-white/30 relative">
+    <div className="rounded-3xl">
+      <div className="member-container rounded-3xl overflow-hidden bg-gray-500/40 backdrop-blur-lg border border-white/30 relative shadow-lg shadow-black">
         <img
           loading="lazy"
           src={imageUrl}
           alt={name}
-          className="w-full h-[16rem] object-contain opacity-100"
+          className="w-full h-[13rem] object-contain opacity-100 sm:h-[16rem]"
         />
         <div className="social-icon-container absolute top-2 right-2">
           <SocialIcon
@@ -60,6 +60,14 @@ const Member: React.FC<MemberProps> = ({ name, position, imageUrl }) => {
             onMouseLeave={() => setIsHovered(false)}
           />
         </div>
+      </div>
+    </div>
+  );
+};
+
+export default Member;
+
+
         {/* <div className="member-info bg-gray-700 text-white p-2 min-h-full justify-center">
           <strong className="name text-xl sm:text-2xl md:text-2xl text-[#F7AB0A]">
             {name}
@@ -76,12 +84,6 @@ const Member: React.FC<MemberProps> = ({ name, position, imageUrl }) => {
           />
           </div>
         </div> */}
-      </div>
-    </div>
-  );
-};
-
-export default Member;
 
 // import React from "react";
 // import { motion } from "framer-motion";
