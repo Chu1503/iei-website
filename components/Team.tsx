@@ -93,7 +93,7 @@ export default function Team({}: Props) {
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-12 gap-x-20">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-10 gap-y-10 sm:gap-y-12 sm:gap-x-20">
         {teamMembers.map((member, index) => (
           <Member
             key={index}
