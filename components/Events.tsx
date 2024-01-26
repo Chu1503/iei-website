@@ -39,7 +39,7 @@ export default function Events({}: Props) {
             key={index}
             imageUrl={image.src.src} // Accessing the src property of the image
             heading={image.name.toUpperCase()}
-            listItems={["Item 1", "Item 2", "Item 3"]}
+            listItems={["Information", "About the event"]}
           />
         ))}
       </div>

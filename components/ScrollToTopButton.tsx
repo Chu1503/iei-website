@@ -27,17 +27,12 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <button
+    <div
       onClick={scrollToHeroSection}
-      className={`${
-        isVisible
-          ? "fixed"
-          : "-translate-y-8"
-      } bg-[#F7AB0A] hover:bg-[rgba(52,52,52,0.5)] text-white hover:text-[#F7AB0A] 
-  font-bold py-2.5 px-4 rounded-full transition-transform duration-300 ease-in-out`}
+      className="fixed z-20 bottom-6 right-6 sm:bottom-12 sm:right-12 flex items-center justify-center bg-[#F7AB0A] rounded-full w-[2rem] h-[2rem] sm:w-[2.5rem] sm:h-[2.5rem] hover:cursor-pointer"
     >
       <FontAwesomeIcon icon={faArrowUp} />
-    </button>
+    </div>
   );
 };
 

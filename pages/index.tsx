@@ -70,8 +70,6 @@ const Home: NextPage = () => {
 
       {/* EXPERIMENT WITH SNAP LATER  */}
 
-      
-
       <section id="hero">
         <Hero />
       </section>

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
 type MemberProps = {
   name: string;
   position: string;
   imageUrl: string;
+  showSocialLink: boolean;
 };
 
 const getSocialLink = (name: string): string => {
@@ -34,28 +35,35 @@ const getSocialLink = (name: string): string => {
   }
 };
 
-const Member: React.FC<MemberProps> = ({ name, position, imageUrl }) => {
+const Member: React.FC<MemberProps> = ({
+  name,
+  position,
+  imageUrl,
+  showSocialLink,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="rounded-3xl">
-      <div className="member-container rounded-3xl overflow-hidden bg-gray-500/40 backdrop-blur-lg border border-white/30 relative shadow-lg shadow-black">
+      <div className="member-container rounded-3xl overflow-hidden bg-[rgba(74,74,74,0.7)] backdrop-blur-xl relative shadow-lg shadow-black">
         <img
           loading="lazy"
           src={imageUrl}
           alt={name}
-          className="w-full h-[11rem] object-contain opacity-100 sm:h-[15rem] sm:w-full"
+          className="w-full h-[11rem] object-contain opacity-100 sm:h-[16rem] sm:w-full"
         />
-        <div className="hidden sm:block social-icon-container absolute top-2 right-2">
-          <SocialIcon
-            url={getSocialLink(name)}
-            target="_blank"
-            fgColor={isHovered ? "transparent" : "white"}
-            bgColor={isHovered ? "#0a67c3" : "transparent"}
-            style={{ width: "3rem", height: "3rem" }}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          />
-        </div>
+        {showSocialLink && (
+          <div className="hidden sm:block social-icon-container absolute top-2 right-2">
+            <SocialIcon
+              url={getSocialLink(name)}
+              target="_blank"
+              fgColor={isHovered ? "transparent" : "white"}
+              bgColor={isHovered ? "#0a67c3" : "transparent"}
+              style={{ width: "3rem", height: "3rem" }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
@@ -63,8 +71,8 @@ const Member: React.FC<MemberProps> = ({ name, position, imageUrl }) => {
 
 export default Member;
 
-
-        {/* <div className="member-info bg-gray-700 text-white p-2 min-h-full justify-center">
+{
+  /* <div className="member-info bg-gray-700 text-white p-2 min-h-full justify-center">
           <strong className="name text-xl sm:text-2xl md:text-2xl text-[#F7AB0A]">
             {name}
           </strong>
@@ -79,7 +87,8 @@ export default Member;
             bgColor="blue"
           />
           </div>
-        </div> */}
+        </div> */
+}
 
 // import React from "react";
 // import { motion } from "framer-motion";

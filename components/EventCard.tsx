@@ -11,7 +11,7 @@ function EventCard({ imageUrl, heading, listItems }: EventCardProps) {
   return (
     <article
       className="flex flex-col items-center space-y-7 flex-shrink-0 w-[250px] xl:w-[500px] snap-center 
-    p-10 bg-[rgba(52,52,52,0.5)] hover:cursor-pointer overflow-hidden "
+    p-10 bg-[rgba(52,52,52,0.7)] hover:cursor-pointer overflow-hidden "
     >
       <motion.img
         initial={{
