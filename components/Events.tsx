@@ -29,11 +29,11 @@ export default function Events({}: Props) {
       }}
       className="flex flex-col relative h-auto text-left max-w-7xl p-10 justify-evenly mx-auto items-center overflow-hidden md:text-row "
     >
-      <h2 className="pt-20 p-10 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
+      <h2 className="p-10 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
         Events
       </h2>
 
-      <div className="w-full flex space-x-5 overflow-x-auto p-10 snap-x snap-mandatory sm:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
+      <div className="w-full flex space-x-5 overflow-x-auto p-0 snap-x snap-mandatory sm:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
         {eventImages.map((image, index) => (
           <EventCard
             key={index}

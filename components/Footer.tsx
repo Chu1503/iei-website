@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className="sticky bottom-0 p-5 flex flex-col items-center justify-between max-w-screen mx-auto z-20 w-full bg-[rgb(0,0,0)] sm:flex-row">
+    <footer className="sticky bottom-0 p-5 flex flex-col items-center justify-between max-w-screen h-18 mx-auto z-20 w-full bg-[rgb(0,0,0)] sm:flex-row">
       <div className="flex items-center text-gray-300 px-32">
         <a href="https://vit.ac.in/" target="_blank">
         <img

@@ -74,18 +74,18 @@ export default function Gallery({}: Props) {
           duration: 1.5,
         }}
       >
-        <h2 className="pt-20 p-10 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
+        <h2 className="p-10 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
           Gallery
         </h2>
       </motion.div>
-      <div className="w-full m-auto py-4 px-4 relative group">
+      <div className="w-full m-auto relative group">
         <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
             className="absolute top-0 left-0 w-full h-full rounded-2xl bg-center bg-cover bg-no-repeat duration-500 shadow-xl shadow-black"
           >
             <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/70 text-[#F7AB0A] cursor-pointer">
-              <BsChevronCompactLeft onClick={prevSlide} size={30} />
+              <BsChevronCompactLeft onClick={prevSlide} size={30}/>
             </div>
             <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/70 text-[#F7AB0A] cursor-pointer">
               <BsChevronCompactRight onClick={nextSlide} size={30} />
@@ -97,7 +97,7 @@ export default function Gallery({}: Props) {
             <div
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className="text-2xl cursor-pointer"
+              className="text-3xl cursor-pointer"
             >
               <RxDotFilled style={{ color: "#F7AB0A" }} />
             </div>

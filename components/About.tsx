@@ -36,7 +36,7 @@ export default function About({}: Props) {
         viewport={{ once: true }}
         className="space-y-10 px-0 md:px-10"
       >
-        <p className="text-sm sm:text-xl text-center leading-loose sm:leading-relaxed sm:pl-20 sm:pr-20">
+        <p className="text-lg sm:text-xl text-center leading-loose sm:leading-relaxed sm:pl-20 sm:pr-20">
           The Institution of Engineers (India) is a prestigious non-profit
           organization established in 1920. Our mission is to advance
           engineering, technology, and their practical applications. As the
