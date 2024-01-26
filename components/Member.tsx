@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
 
 type MemberProps = {
   name: string;
@@ -43,6 +44,20 @@ const Member: React.FC<MemberProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
+    <motion.div
+        initial={{
+          x: 200,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.2,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        viewport={{ once: true }}
+      >
     <div className="rounded-3xl">
       <div className="member-container rounded-3xl overflow-hidden bg-[rgba(74,74,74,0.7)] backdrop-blur-xl relative shadow-lg shadow-black">
         <img
@@ -66,6 +81,7 @@ const Member: React.FC<MemberProps> = ({
         )}
       </div>
     </div>
+    </motion.div>
   );
 };
 

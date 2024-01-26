@@ -4,8 +4,8 @@
 
 @layer components {
   .herobutton {
-    @apply px-7 py-0 border-[#242424] rounded-full uppercase text-sm tracking-widest text-white transition-all
-    hover:border-[#F7AB0A] hover:text-[#F7AB0A];
+    @apply px-7 py-0 border-[#242424] rounded-full uppercase text-sm tracking-widest  transition-all
+    hover:border-[rgb(247,171,10)] hover:text-[#F7AB0A];
   }
 }
 

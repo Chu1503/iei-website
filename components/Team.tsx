@@ -100,7 +100,7 @@ export default function Team({}: Props) {
             name={member.name}
             position={member.position}
             imageUrl={member.imageUrl}
-            showSocialLink={index >= 2} // Shows social link from index 2 onwards
+            showSocialLink={index >= 2} 
           />
         ))}
       </div>
