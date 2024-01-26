@@ -1,8 +1,3 @@
-// import creatoverse from "../images/creatoverse.png";
-// import illumina from "../images/illumina.png";
-// import coding_odyssey from "../images/coding_odyssey.png";
-// import subway_cyphers from "../images/subway_cyphers.png";
-
 import React from "react";
 import { motion } from "framer-motion";
 

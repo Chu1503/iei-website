@@ -17,7 +17,7 @@ export default function AboutVIT({}: Props) {
       }}
       className="flex flex-col relative h-auto text-center max-w-7xl p-10 justify-evenly mx-auto items-center"
     >
-      <h2 className="p-10 uppercase tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
+      <h2 className="p-10 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
         About VIT
       </h2>
 
@@ -36,7 +36,7 @@ export default function AboutVIT({}: Props) {
         viewport={{ once: true }}
         className="space-y-10 px-0 md:px-10"
       >
-        <p className="text-lg text-center">
+        <p className="text-sm sm:text-xl text-center leading-loose sm:leading-relaxed sm:pl-20 sm:pr-20">
           Vellore Institute of Technology (VIT), located in Vellore, is a
           prestigious engineering institution known for its exceptional
           education and holistic student development. It's a rare college that
