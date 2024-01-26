@@ -9,6 +9,7 @@ import Events from "../components/Events";
 import Team from "../components/Team";
 import Gallery from "../components/Gallery";
 import AboutVIT from "../components/AboutVIT";
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 import vedika from "../images/Vedika_Nigam.png";
 import suryansh from "../images/Suryansh_Kumar.png";
@@ -69,6 +70,8 @@ const Home: NextPage = () => {
 
       {/* EXPERIMENT WITH SNAP LATER  */}
 
+      
+
       <section id="hero">
         <Hero />
       </section>
@@ -92,6 +95,8 @@ const Home: NextPage = () => {
       <section id="gallery">
         <Gallery />
       </section>
+
+      <ScrollToTopButton />
 
       <section id="footer">
         <Footer />
