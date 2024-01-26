@@ -24,7 +24,7 @@ function EventCard({ imageUrl, heading, listItems }: EventCardProps) {
           y: 0,
         }}
         viewport={{ once: true }}
-        className="w-40 h-40 bg-black xl:w-[200px] xl:h-[200px] object-cover object-center"
+        className="w-40 h-40 xl:w-[200px] xl:h-[200px] object-cover object-center"
         src={imageUrl}
         alt={heading}
       />
