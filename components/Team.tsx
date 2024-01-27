@@ -81,14 +81,14 @@ export default function Team({}: Props) {
   ];
 
   return (
-    <div className="flex flex-col relative h-auto text-center max-w-7xl p-10 justify-evenly items-center mx-auto">
+    <div className="flex flex-col relative h-auto text-center max-w-7xl p-4 justify-evenly items-center mx-auto">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         // className="flex flex-col relative h-auto text-center max-w-7xl p-10 justify-evenly mx-auto items-center xl:px-10 min-h-auto xl:space-y-10"
       >
-        <h2 className="p-10 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-3xl sm:text-4xl">
+        <h2 className="pt-20 p-10 uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-4xl sm:text-5xl">
           Our Team
         </h2>
       </motion.div>

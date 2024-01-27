@@ -33,7 +33,7 @@ function EventCard({ imageUrl, heading, listItems }: EventCardProps) {
         <h3 className="text-2xl text-center font-bold pb-5">{heading}</h3>
         <ul className="list-disc space-y-4 ml-5 text-lg">
           {listItems.map((item, index) => (
-            <li key={index}>{item}</li>
+            <p key={index}>{item}</p> // change this to <li> for a list
           ))}
         </ul>
       </div>
