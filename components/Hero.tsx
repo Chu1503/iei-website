@@ -1,7 +1,7 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import iei_logo from '../images/iei_logo.png';
+import iei_logo from '../images/iei_logo.webp';
 
 type Props = {};
 

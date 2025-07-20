@@ -11,19 +11,19 @@ import Gallery from "../components/Gallery";
 import AboutVIT from "../components/AboutVIT";
 import ScrollToTopButton from '../components/ScrollToTopButton';
 
-import vedika from "../images/Vedika_Nigam.png";
-import suryansh from "../images/Suryansh_Kumar.png";
-import arka from "../images/Arka_De.png";
-import omm from "../images/Omm_Malhotra.png";
-import daksh from "../images/Daksh_Pratap.png";
-import shiv from "../images/Shiv_Akash.png";
-import manish from "../images/Manish_Maheswari.png";
-import sanskriti from "../images/Sanskriti_Singh.png";
-import arisha from "../images/Arisha_Tanveer.png";
-import shreya from "../images/Shreya_Sonawane.png";
+import vedika from "../images/Vedika_Nigam.webp";
+import suryansh from "../images/Suryansh_Kumar.webp";
+import arka from "../images/Arka_De.webp";
+import omm from "../images/Omm_Malhotra.webp";
+import daksh from "../images/Daksh_Pratap.webp";
+import shiv from "../images/Shiv_Akash.webp";
+import manish from "../images/Manish_Maheswari.webp";
+import sanskriti from "../images/Sanskriti_Singh.webp";
+import arisha from "../images/Arisha_Tanveer.webp";
+import shreya from "../images/Shreya_Sonawane.webp";
 
-import iei_logo_text from '../images/iei_logo_text.png';
-import iei_logo from '../images/iei_logo.png';
+import iei_logo_text from '../images/iei_logo_text.webp';
+import iei_logo from '../images/iei_logo.webp';
 
 // export default function Home() {
 const Home: NextPage = () => {

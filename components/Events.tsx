@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import EventCard from "./EventCard";
-import creatoverse from "../images/creatoverse.png";
-import illumina from "../images/illumina.png";
-import coding_odyssey from "../images/coding_odyssey.png";
-import subway_cyphers from "../images/subway_cyphers.png";
+import creatoverse from "../images/creatoverse.webp";
+import illumina from "../images/illumina.webp";
+import coding_odyssey from "../images/coding_odyssey.webp";
+import subway_cyphers from "../images/subway_cyphers.webp";
 
 type Props = {};
 

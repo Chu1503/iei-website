@@ -1,18 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Member from "./Member";
-import vedika from "../images/Vedika_Nigam.png";
-import suryansh from "../images/Suryansh_Kumar.png";
-import arka from "../images/Arka_De.png";
-import omm from "../images/Omm_Malhotra.png";
-import daksh from "../images/Daksh_Pratap.png";
-import shiv from "../images/Shiv_Akash.png";
-import manish from "../images/Manish_Maheswari.png";
-import sanskriti from "../images/Sanskriti_Singh.png";
-import arisha from "../images/Arisha_Tanveer.png";
-import shreya from "../images/Shreya_Sonawane.png";
-import joel from "../images/joel.png";
-import mahalakshmi from "../images/mahalakshmi.png";
+import vedika from "../images/Vedika_Nigam.webp";
+import suryansh from "../images/Suryansh_Kumar.webp";
+import arka from "../images/Arka_De.webp";
+import omm from "../images/Omm_Malhotra.webp";
+import daksh from "../images/Daksh_Pratap.webp";
+import shiv from "../images/Shiv_Akash.webp";
+import manish from "../images/Manish_Maheswari.webp";
+import sanskriti from "../images/Sanskriti_Singh.webp";
+import arisha from "../images/Arisha_Tanveer.webp";
+import shreya from "../images/Shreya_Sonawane.webp";
+import joel from "../images/joel.webp";
+import mahalakshmi from "../images/mahalakshmi.webp";
 
 type Props = {};
 
@@ -93,7 +93,7 @@ export default function Team({}: Props) {
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-10 sm:gap-y-12 sm:gap-x-20">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-10 sm:gap-y-12 sm:gap-x-10 xl:gap-x-20">
         {teamMembers.map((member, index) => (
           <Member
             key={index}
