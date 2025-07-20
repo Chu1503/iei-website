@@ -11,8 +11,8 @@ import manish from "../images/Manish_Maheswari.webp";
 import sanskriti from "../images/Sanskriti_Singh.webp";
 import arisha from "../images/Arisha_Tanveer.webp";
 import shreya from "../images/Shreya_Sonawane.webp";
-import joel from "../images/joel.webp";
-import mahalakshmi from "../images/mahalakshmi.webp";
+import joel from "../images/Joel.webp";
+import mahalakshmi from "../images/Mahalakshmi.webp";
 
 type Props = {};
 
